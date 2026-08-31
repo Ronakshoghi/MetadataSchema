@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="56" viewBox="0 0 720 56" role="img" aria-label="MiMeDat animated intro">
+  <style>
+    .txt {
+      font-family: Inter, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      stroke: #D5D5D5;
+      stroke-width: 2.4;
+      stroke-linejoin: round;
+      paint-order: stroke fill;
+    }
+  </style>
+
+  <defs>
+    <clipPath id="clip-mi">
+      <rect x="258" y="0" width="0" height="56">
+        <animate attributeName="width" values="0;195;195" keyTimes="0;0.743;1" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clip-me">
+      <rect x="270" y="0" width="0" height="56">
+        <animate attributeName="width" values="0;170;170" keyTimes="0;0.743;1" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="clip-dat">
+      <rect x="296" y="0" width="0" height="56">
+        <animate attributeName="width" values="0;115;115" keyTimes="0;0.743;1" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;0.3332;0.3333;0.9999;1" dur="10.5s" repeatCount="indefinite" calcMode="discrete"/>
+    <text class="txt" x="258" y="35" fill="#0E2746" clip-path="url(#clip-mi)">Mi = Microstructure</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3332;0.3333;0.6665;0.6666;1" dur="10.5s" repeatCount="indefinite" calcMode="discrete"/>
+    <text class="txt" x="270" y="35" fill="#E89681" clip-path="url(#clip-me)">Me = Mechanical</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6665;0.6666;1" dur="10.5s" repeatCount="indefinite" calcMode="discrete"/>
+    <text class="txt" x="296" y="35" fill="#3B8287" clip-path="url(#clip-dat)">Dat = Data</text>
+  </g>
+</svg>
