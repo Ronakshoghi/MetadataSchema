@@ -65,9 +65,9 @@
               "description": "Saturated slip resistance.",
               "property": "Stress"
             },
-            "strain_rate_sensitivity_exponent": {
+            "stress_exponent": {
               "type": "number",
-              "description": "Strain rate sensitivity exponent."
+              "description": "inverse strain rate sensitivity exponent."
             },
             "reference_hardening_rate": {
               "type": "number",
@@ -81,7 +81,7 @@
           },
           "required": [
             "reference_shear_rate",
-            "initial_critical_resolved_shear_stress",
+            "stress_exponent",
             "saturated_slip_resistance",
             "strain_rate_sensitivity_exponent",
             "reference_hardening_rate",
